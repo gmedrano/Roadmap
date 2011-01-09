@@ -1,0 +1,21 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  icon: MyString
+  name: MyString
+  summary: MyText
+  quote: MyText
+  what: MyText
+  who: MyText
+  why: MyText
+  how: MyText
+
+two:
+  icon: MyString
+  name: MyString
+  summary: MyText
+  quote: MyText
+  what: MyText
+  who: MyText
+  why: MyText
+  how: MyText

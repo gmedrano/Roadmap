@@ -1,0 +1,37 @@
+<h1>Listing features</h1>
+
+<table>
+  <tr>
+    <th>Icon</th>
+    <th>Name</th>
+    <th>Summary</th>
+    <th>Quote</th>
+    <th>What</th>
+    <th>Who</th>
+    <th>Why</th>
+    <th>How</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @features.each do |feature| %>
+  <tr>
+    <td><%= feature.icon %></td>
+    <td><%= feature.name %></td>
+    <td><%= feature.summary %></td>
+    <td><%= feature.quote %></td>
+    <td><%= feature.what %></td>
+    <td><%= feature.who %></td>
+    <td><%= feature.why %></td>
+    <td><%= feature.how %></td>
+    <td><%= link_to 'Show', feature %></td>
+    <td><%= link_to 'Edit', edit_feature_path(feature) %></td>
+    <td><%= link_to 'Destroy', feature, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Feature', new_feature_path %>
