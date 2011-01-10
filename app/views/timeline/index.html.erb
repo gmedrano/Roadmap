@@ -4,11 +4,34 @@
     <li>
       <a href="#">
         <%= image_tag(feature.icon) %>
-        <h1><%= feature.name %></h1>
+        <h2><%= feature.name %></h2>
         <p><%= feature.summary %></p>
       </a>
     </li>
   <% end %>
-    <div class="clearfix" />
   </ul>
+
+  <ul class="long-term" class="clearfix">
+    <h1>Long Term</h1>
+  <% @features.each do |feature| %>
+    <li>
+      <a href="#">
+        <%= feature.name %>
+      </a>
+    </li>
+  <% end %>
+  </ul>
+
+  <ul class="mid-term" class="clearfix">
+    <h1>Mid Term</h1>
+  <% @features.each do |feature| %>
+    <li>
+      <a href="#">
+        <%= feature.name %>
+      </a>
+    </li>
+  <% end %>
+  </ul>
+
+  <div class="clearfix" />
 </div>
