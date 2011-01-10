@@ -29,3 +29,6 @@ gem 'sqlite3-ruby', :require => 'sqlite3'
 # group :development, :test do
 #   gem 'webrat'
 # end
+
+# JQuery
+gem 'jquery-rails', '>= 0.2.6'

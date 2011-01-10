@@ -51,7 +51,8 @@ Roadmap::Application.routes.draw do
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
   # root :to => "welcome#index"
-  root :controller => "features", :action => "index"
+  # root :controller => "features", :action => "index" #the way I did it with wesley
+  root :to => "features#index"
 
   # See how all your routes lay out with "rake routes"
 
