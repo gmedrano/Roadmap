@@ -1,4 +1,6 @@
 Roadmap::Application.routes.draw do
+  get "timeline/index"
+
   resources :features
 
   # The priority is based upon order of creation:
@@ -52,7 +54,7 @@ Roadmap::Application.routes.draw do
   # just remember to delete public/index.html.
   # root :to => "welcome#index"
   # root :controller => "features", :action => "index" #the way I did it with wesley
-  root :to => "features#index"
+  root :to => "timeline#index"
 
   # See how all your routes lay out with "rake routes"
 

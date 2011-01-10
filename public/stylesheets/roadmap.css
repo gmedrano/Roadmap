@@ -1,0 +1,60 @@
+h1, h2, h3, h4, p, body, ul, li, a {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: #000000;
+  font-family: Helvetica Neue, Helvetica, Arial;
+  font-size: small;
+  font-weight: lighter;
+  padding: 10px;
+}
+
+ul li {
+  list-style: none;
+  opacity: 0.96;
+  margin-bottom: 5px;
+}
+
+ul li a {
+  -moz-border-radius: 5px 5px 5px 5px;
+  display: block;
+  font-size: 16px;
+  min-height: 60px;
+  padding: 5px;
+  text-decoration: none;
+  width: 240px;
+  background-color: #EBF1F3;
+  border: 1px solid #00486C;
+}
+
+ul li a:hover {
+  background-color: #00486C;
+  border: 1px solid #00486C;
+  opacity: 1;
+}
+
+ul li a:hover h1, ul li a:hover p {
+  color: #FFFFFF;
+}
+
+ul li img {
+  border: none;
+  float: left;
+  min-height: 25px;
+  padding-right: 5px;
+  margin-bottom: 40px;
+}
+
+ul li h1 {
+  font-size: 14px;
+  font-weight: 200;
+  text-transform: uppercase;
+  color: #2B7686;
+}
+
+ul li p {
+  font-family: Arial;
+  font-size: 11px;
+}

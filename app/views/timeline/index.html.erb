@@ -1,0 +1,13 @@
+<div>
+  <% @features.each do |feature| %>
+  <ul>
+    <li>
+      <a href="#">
+        <%= image_tag(feature.icon) %>
+        <h1><%= feature.name %></h1>
+        <p><%= feature.summary %></p>
+      </a>
+    </li>
+  </ul>
+  <% end %>
+</div>
