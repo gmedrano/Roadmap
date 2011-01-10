@@ -1,6 +1,6 @@
-<div>
+<div id="viewport">
+  <ul id="short-term" class="clearfix">
   <% @features.each do |feature| %>
-  <ul>
     <li>
       <a href="#">
         <%= image_tag(feature.icon) %>
@@ -8,6 +8,7 @@
         <p><%= feature.summary %></p>
       </a>
     </li>
-  </ul>
   <% end %>
+    <div class="clearfix" />
+  </ul>
 </div>

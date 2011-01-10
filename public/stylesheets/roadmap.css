@@ -9,15 +9,22 @@ body {
   font-size: small;
   font-weight: lighter;
   padding: 10px;
+  border: 1px solid red;
 }
 
-ul li {
+ul#short-term {
+  border: 1px solid green;
+}
+
+ul#short-term li {
   list-style: none;
   opacity: 0.96;
+  float: left;
+  margin-left: 5px;
   margin-bottom: 5px;
 }
 
-ul li a {
+ul#short-term li a {
   -moz-border-radius: 5px 5px 5px 5px;
   display: block;
   font-size: 16px;
@@ -29,17 +36,17 @@ ul li a {
   border: 1px solid #00486C;
 }
 
-ul li a:hover {
+ul#short-term li a:hover {
   background-color: #00486C;
   border: 1px solid #00486C;
   opacity: 1;
 }
 
-ul li a:hover h1, ul li a:hover p {
+ul#short-term li a:hover h1, ul li a:hover p {
   color: #FFFFFF;
 }
 
-ul li img {
+ul#short-term li img {
   border: none;
   float: left;
   min-height: 25px;
@@ -47,14 +54,27 @@ ul li img {
   margin-bottom: 40px;
 }
 
-ul li h1 {
+ul#short-term li h1 {
   font-size: 14px;
   font-weight: 200;
   text-transform: uppercase;
   color: #2B7686;
 }
 
-ul li p {
+ul#short-term li p {
   font-family: Arial;
   font-size: 11px;
+}
+
+ul.mid-term, ul.long-term {
+  -moz-border-radius: 5px 5px 5px 5px;
+  float: right;
+  margin-left: 10px;
+  padding: 10px;
+  width: 230px;
+  border: 1px solid red;
+}
+
+.clearfix {
+  clear: both;
 }
