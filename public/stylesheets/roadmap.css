@@ -41,6 +41,8 @@ ul#short-term li {
 }
 
 ul#short-term li a {
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
   -moz-border-radius: 5px 5px 5px 5px;
   display: block;
   font-size: 16px;
@@ -91,6 +93,8 @@ ul.long-term {
 }
 
 ul.mid-term, ul.long-term {
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
   -moz-border-radius: 5px 5px 5px 5px;
   float: right;
   margin-left: 10px;
@@ -106,6 +110,8 @@ ul.mid-term h1, ul.long-term h1 {
 }
 
 ul.mid-term li, ul.long-term li {
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
   -moz-border-radius: 5px 5px 5px 5px;
   background-color: #FFFFFF;
   font-size: 12px;
@@ -124,6 +130,8 @@ ul.mid-term li a, ul.long-term li a {
 
 
 ul.mid-term li a:hover, ul.long-term li a:hover {
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
   -moz-border-radius: 5px 5px 5px 5px;
   background-color: #666;
   color: #fff;
@@ -144,6 +152,8 @@ div#timeline img.timeline_arrow {
 }
 
 div#feature-details {
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
   -moz-border-radius: 8px 8px 8px 8px;
   background: none repeat scroll 0 0 #EBF1F3;
   margin: 0 30px 30px 30px;
@@ -183,6 +193,8 @@ div#feature-details ul li h1 span {
 
 div#feature-details ul li a {
   background-color: #660099;
+  border-radius: 100px;
+  -webkit-border-radius: 100px;
   -moz-border-radius: 100px 100px 100px 100px;
   color: #FFFFFF;
   font-family: Arial;
