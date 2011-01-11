@@ -1,11 +1,8 @@
 <ul id="short-term" class="clearfix">
 <% @features.each do |feature| %>
   <li>
-    <a href="#">
-      <%= image_tag(feature.icon) %>
-      <h2><%= feature.name %></h2>
-      <p><%= feature.summary %></p>
-    </a>
+    <!-- <%= link_to "Click this", {:controller => 'features', :action => "show", :id => feature.id}, :remote => true, :class => 'remote_link' %> -->
+    <%= link_to "Click this", feature_path(feature), :remote => true, :class => 'remote-link' %>
   </li>
 <% end %>
 </ul>

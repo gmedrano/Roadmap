@@ -16,6 +16,7 @@ class FeaturesController < ApplicationController
     @feature = Feature.find(params[:id])
 
     respond_to do |format|
+      format.js { render(:partial => 'timeline/details') }
       format.html # show.html.erb
       format.xml  { render :xml => @feature }
     end
