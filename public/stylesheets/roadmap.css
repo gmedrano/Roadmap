@@ -36,7 +36,7 @@ ul#short-term li {
   list-style: none;
   opacity: 0.96;
   float: left;
-  margin-left: 5px;
+  margin-right: 5px;
   margin-bottom: 5px;
 }
 
@@ -127,6 +127,27 @@ ul.mid-term li a:hover, ul.long-term li a:hover {
   -moz-border-radius: 5px 5px 5px 5px;
   background-color: #666;
   color: #fff;
+}
+
+div#timeline {
+  background: url(../images/timeline_background.png) repeat-x 0 0;
+  height: 80px;
+  margin: 30px 30px 0 30px;
+}
+
+div#timeline img.timeline_months {
+  float: left;
+}
+
+div#timeline img.timeline_arrow {
+  float: right;
+}
+
+div#feature-details {
+  -moz-border-radius: 8px 8px 8px 8px;
+  background: none repeat scroll 0 0 #EBF1F3;
+  margin: 0 30px 30px 30px;
+  padding: 20px;
 }
 
 .clearfix {
