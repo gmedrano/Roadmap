@@ -1,5 +1,5 @@
 <div id="viewport">
-  <p><%= render(:partial => 'terms') %></p>
+  <%= render(:partial => 'terms') %>
 </div>
 
 <div id="timeline">
@@ -7,6 +7,6 @@
   <%= image_tag('/images/timeline_arrow.png', :class => 'timeline_arrow') %>
 </div>
 
-<div id="feature-details">
-  hello
+<div id="feature-details">  
+  <%= render(:partial => 'details') %>
 </div>

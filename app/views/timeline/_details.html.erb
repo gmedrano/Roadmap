@@ -1,0 +1,33 @@
+<ul class="web_stack">
+  <li>
+    <%= image_tag(@features.first.icon) %>
+    <h1><%= @features.first.name %></h1>
+    <a href="#">Details</a>
+    <p class="quote"><%= @features.first.quote %></p>
+  </li>
+
+  <li>
+    <h1>Description <span> - what is this?</span></h1>
+    <p><%= @features.first.what %></p>
+
+    <h1>Motivation <span> - why are we building it?</span></h1>
+    <p><%= @features.first.why %></p>
+
+  </li>
+
+  <li>
+    <h1>Priority <span> - why not earlier?, why not later?</span></h1>
+    <p><%= @features.first.how %></p>
+
+    <h1>Value <span> - who benefits from this?</span></h1>
+
+    <p><%= @features.first.who %></p>
+  </li>
+
+  <li>
+    <h1>Artifacts  <span> - sketches, screenshots, prototypes</span></h1>
+    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  </li>
+
+  <div class="clearfix"></div>
+</ul>

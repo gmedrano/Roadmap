@@ -150,6 +150,61 @@ div#feature-details {
   padding: 20px;
 }
 
+div#feature-details ul li:first-child {
+    border: none;
+}
+
+div#feature-details ul li {
+  border-left: 1px solid #CCCCCC;
+  float: left;
+  list-style: none;
+  min-height: 150px;
+  padding: 0 10px;
+  width: 23%;
+}
+
+div#feature-details ul li img {
+  float: left;
+  padding-right: 10px;
+}
+
+div#feature-details ul li h1 {
+  color: #660099;
+  font-size: 16px;
+  font-weight: 200;
+  padding-bottom: 5px;
+  text-transform: uppercase;
+}
+
+div#feature-details ul li h1 span {
+    color: #333333;
+    text-transform: lowercase;
+}
+
+div#feature-details ul li a {
+  background-color: #660099;
+  -moz-border-radius: 100px 100px 100px 100px;
+  color: #FFFFFF;
+  font-family: Arial;
+  font-size: 11px;
+  padding: 3px 20px;
+  text-decoration: none;
+}
+
+div#feature-details ul li a:hover {
+  background-color: #C29FD2;
+  color: #660099;
+}
+
+div#feature-details ul li p {
+  font-family: Arial;
+  margin-bottom: 20px;
+}
+
+div#feature-details ul li p.quote {
+    padding-top: 30px;
+}
+
 .clearfix {
   clear: both;
 }
