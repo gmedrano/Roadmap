@@ -2,7 +2,11 @@
 <% @features.each do |feature| %>
   <li>
     <!-- <%= link_to "Click this", {:controller => 'features', :action => "show", :id => feature.id}, :remote => true, :class => 'remote_link' %> -->
-    <%= link_to "Click this", feature_path(feature), :remote => true, :class => 'remote-link' %>
+    <%= link_to feature_path(feature), :remote => true, :class => 'remote-link' do %>
+      <%= image_tag(feature.icon) %>
+      <h2><%= feature.name %></h2>
+      <p><%= feature.summary %></p>
+    <% end %>
   </li>
 <% end %>
 </ul>
