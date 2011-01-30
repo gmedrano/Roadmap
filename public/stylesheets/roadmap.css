@@ -30,6 +30,8 @@ div#viewport {
 ul#short-term {
   float: left;
   width: 65%;
+  min-height: 400px;
+  border: 1px solid red;
 }
 
 ul#short-term li {

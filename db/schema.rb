@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110109014715) do
+ActiveRecord::Schema.define(:version => 20110124012510) do
 
   create_table "features", :force => true do |t|
     t.string   "icon"
@@ -23,6 +23,7 @@ ActiveRecord::Schema.define(:version => 20110109014715) do
     t.text     "how"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "term",       :default => "long"
   end
 
 end
