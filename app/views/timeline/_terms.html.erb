@@ -18,9 +18,9 @@
     <h1>Long Term</h1>
   <% @long_term_features.each do |feature| %>
     <li draggable='true'>
-      <a href="#">
+      <%= link_to feature_path(feature), :remote => true, :class => 'remote-link' do %>
         <%= feature.name %>
-      </a>
+      <% end %>
     </li>
   <% end %>
   </ul>
@@ -31,9 +31,9 @@
     <h1>Mid Term</h1>
   <% @mid_term_features.each do |feature| %>
     <li draggable='true'>
-      <a href="#">
+      <%= link_to feature_path(feature), :remote => true, :class => 'remote-link' do %>
         <%= feature.name %>
-      </a>
+      <% end %>
     </li>
   <% end %>
   </ul>

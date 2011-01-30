@@ -19,6 +19,7 @@ features = Feature.create(
       :who => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
       :why => 'A quick brown fox jumps over the very lazy dog.',
       :how => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+      :term => 'mid',
     },
     {
       :icon => '/images/icon_2.png',
@@ -29,6 +30,7 @@ features = Feature.create(
       :who => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
       :why => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
       :how => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+      :term => 'mid',
     },
     {
       :icon => '/images/icon_3.png',
@@ -39,6 +41,7 @@ features = Feature.create(
       :who => 'A quick brown fox jumps over the very lazy dog.',
       :why => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
       :how => 'A quick brown fox jumps over the very lazy dog.',
+      :term => 'short',
     },
     {
       :icon => '/images/icon_4.png',
@@ -49,6 +52,7 @@ features = Feature.create(
       :who => 'A quick brown fox jumps over the very lazy dog.',
       :why => 'A quick brown fox jumps over the very lazy dog.',
       :how => 'A quick brown fox jumps over the very lazy dog.',
+      :term => 'short',
     },
     {
       :icon => '/images/icon_5.png',
