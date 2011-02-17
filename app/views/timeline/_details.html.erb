@@ -2,7 +2,8 @@
   <li>
     <%= image_tag(@feature.icon) %>
     <h1><%= @feature.name %></h1>
-    <a href="#">Details</a>
+    <%= link_to 'Details', @feature %>
+    <%= link_to 'Edit', edit_feature_path(@feature) %>
     <p class="quote"><%= @feature.quote %></p>
   </li>
 

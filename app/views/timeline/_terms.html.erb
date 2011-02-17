@@ -2,7 +2,6 @@
   <ul id="short-term" class="clearfix">
   <% @short_term_features.each do |feature| %>
     <li draggable='true'>
-      <!-- <%= link_to "Click this", {:controller => 'features', :action => "show", :id => feature.id}, :remote => true, :class => 'remote_link' %> -->
       <%= link_to feature_path(feature), :remote => true, :class => 'remote-link' do %>
         <%= image_tag(feature.icon) %>
         <h2><%= feature.name %></h2>
@@ -19,7 +18,9 @@
   <% @long_term_features.each do |feature| %>
     <li draggable='true'>
       <%= link_to feature_path(feature), :remote => true, :class => 'remote-link' do %>
-        <%= feature.name %>
+        <%= image_tag(feature.icon) %>
+        <h2><%= feature.name %></h2>
+        <p><%= feature.summary %></p>
       <% end %>
     </li>
   <% end %>
@@ -32,7 +33,9 @@
   <% @mid_term_features.each do |feature| %>
     <li draggable='true'>
       <%= link_to feature_path(feature), :remote => true, :class => 'remote-link' do %>
-        <%= feature.name %>
+        <%= image_tag(feature.icon) %>
+        <h2><%= feature.name %></h2>
+        <p><%= feature.summary %></p>
       <% end %>
     </li>
   <% end %>

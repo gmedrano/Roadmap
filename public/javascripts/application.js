@@ -2,10 +2,10 @@
 // This file is automatically included by javascript_include_tag :defaults
 
 $(document).ready(function(){
-  $('.remote-link').bind("ajax:success", function(evt, data, status, xhr){
+  $('.remote-link').live("ajax:success", function(evt, data, status, xhr){
     $('#feature-details').html(xhr.responseText);
   });
-  
+    
   // Drag and Drop
   function handleDragStart(e) {
 		self = $(this);
@@ -44,10 +44,24 @@ $(document).ready(function(){
 	  }
 	  
 	  if(self.is('ul')) {
-	    newElement = "<li draggable='true'><a href='#'>" + $(dragSrcEl).find('a').html() + "</a></li>"
+	    newElement = "<li draggable='true'>" + $(dragSrcEl).html() + "</li>"
 	    self.append(newElement)
 	    $(dragSrcEl).remove()
 	  }
+	  
+	  // make ajax call to path stored in link.
+		// this is in order to load the feature information
+		// at the bottom of the page.
+		$.ajax({
+      url: $(dragSrcEl).find('a').attr('href'),
+      success: function(data, textStatus, xhr) {
+        $('#feature-details').html(xhr.responseText);
+      },
+      dataType: 'script'
+    });
+    
+		
+		
 	  	
   }
   
